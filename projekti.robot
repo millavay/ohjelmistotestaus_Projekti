@@ -1,6 +1,38 @@
 *** Settings ***
 Library    SeleniumLibrary
 
+*** Test Cases ***
+Testaa "Ajankohtaista"-osion artikkelit, kohta 1
+
+    Open Browser    http://www.hamk.fi/   Chrome
+    ...    options=add_experimental_option("detach", True)     #sivu ei sulkeudu heti
+    Maximize Browser Window
+    Sleep   2
+
+    Click Button    id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll
+
+    Sleep   2
+
+    #Scroll Element Into View    //*[@id="site-content"]/article/div[2]/div[1]/h2
+    Scroll Element Into View    //*[@id="site-content"]/article/div[2]/div[1]/div[2]/div[3]
+    Sleep    2
+
+    Click Button    xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[1]/button
+    Sleep   2
+    Click Button    xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[2]/button
+    Sleep    2
+    Click Button    xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[3]/button
+    Sleep   2
+    Click Button    xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[4]/button
+    Sleep    2
+    Click Button    xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[1]/button
+    Sleep    2
+    Click Element    xpath:/html/body/main/article/div[2]/div[1]/div[2]/div[1]/article[1]/div[2]/h3/a
+
+    Sleep   2
+
+    Page Should Contain    Opinnoista uutta virtaa
+
 
 *** Test Cases ***
 Open browser and search services kohta 2
