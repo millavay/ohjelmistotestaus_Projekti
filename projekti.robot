@@ -17,6 +17,7 @@ Testaa "Ajankohtaista"-osion artikkelit, kohta 1
     Scroll Element Into View    //*[@id="site-content"]/article/div[2]/div[1]/div[2]/div[3]
     Sleep    2
 
+    #klikataan vuorotellen väliotsikoita
     Click Button    xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[1]/button
     Sleep   2
     Click Button    xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[2]/button
@@ -27,10 +28,11 @@ Testaa "Ajankohtaista"-osion artikkelit, kohta 1
     Sleep    2
     Click Button    xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[1]/button
     Sleep    2
+    #avataan ensimmäinen artikkeli
     Click Element    xpath:/html/body/main/article/div[2]/div[1]/div[2]/div[1]/article[1]/div[2]/h3/a
 
     Sleep   2
-
+    #tarkistetaan että sivu täsmää aiheotsikkoon
     Page Should Contain    Opinnoista uutta virtaa
 
 
