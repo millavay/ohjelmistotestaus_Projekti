@@ -23,4 +23,4 @@ Hamk testaus kohta 4
     Sleep    3
 
     ${nimi}=        Get Text    xpath:/html/body/main/article/div[1]/div/h1
-    Page Should Contain    text    ${nimi}
+    Page Should Contain    ${nimi}
