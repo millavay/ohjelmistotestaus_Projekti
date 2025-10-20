@@ -115,3 +115,34 @@ Hamk testaus kohta 4
 
     ${nimi}=        Get Text    xpath:/html/body/main/article/div[1]/div/h1
     Page Should Contain    ${nimi}
+
+
+
+*** Test Cases ***
+Testaa että moodle linkki toimii testi 6
+
+    # avaa selain
+
+    Open Browser    http://hamk.fi    Chrome
+    ...    options=add_experimental_option("detach", True)
+   
+    Maximize Browser Window
+
+    Sleep    5
+
+    Click Button    id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll
+
+    # valitse opiskelijan sivut --> opiskelijan työkalut
+    Click Button    xpath:/html/body/header/div/div/div/nav/div/ul/li[4]/button
+
+    Sleep    1
+
+    Click Element    xpath:/html/body/header/div/div/div/nav/div/ul/li[4]/ul/li[2]
+
+    # varmista etä moodle linkki toimii ja pääset moodlen sivulle
+    Click Element    xpath:/html/body/main/article/div[2]/div[2]/div/div[1]/a
+
+    ${location}=    Get Location
+    Log    ${location}
+
+    Location Should Be    https://learn.hamk.fi/
