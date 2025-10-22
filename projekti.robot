@@ -192,3 +192,104 @@ Testaa että opiskelijan työkalut sivulla kaikki linkit toimivat testi 7
     Sleep    2
 
     Close Browser
+
+*** Test Cases ***
+Tarkistetaan että kampuslinkit toimii ja sivuilla on yhteystiedot testi 8
+
+    Open Browser    http://www.hamk.fi/   Chrome
+    ...    options=add_experimental_option("detach", True)
+    Maximize Browser Window
+    Sleep   1
+    Click Button    id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll
+    Sleep   1
+    
+    Click Button    xpath:/html/body/header/div/div/div/nav/div/ul/li[5]/button
+    Sleep    1
+
+    Click Element    xpath:/html/body/header/div/div/div/nav/div/ul/li[5]/ul/li[1]/a/span
+    Sleep    1
+    
+    #Evo
+    Sleep    1
+    Click Link    xpath:/html/body/main/article/div[6]/div/article[1]/div/h3/a
+    Page Should Contain    Evon kampus
+    Sleep    1
+
+    Scroll Element Into View    xpath:/html/body/main/article/div[5]/div
+    Sleep    1
+    Page Should Contain    Yhteystiedot ja saapuminen
+    Sleep    1
+    Go Back
+
+    #Forssa
+    Sleep    1
+
+    Click Link    xpath:/html/body/main/article/div[6]/div/article[2]/div/h3/a
+    Page Should Contain    Forssan kampus
+    Sleep    1
+
+    Scroll Element Into View    xpath:/html/body/main/article/div[5]/div
+    Page Should Contain    Yhteystiedot ja saapuminen
+    Sleep    1
+    Go Back
+
+    #Hämeenlinna
+    Sleep    1
+
+    Click Link    xpath:/html/body/main/article/div[6]/div/article[3]/div/h3/a
+    Page Should Contain    Hämeenlinnan korkeakoulukeskus
+    Sleep    1
+
+    Scroll Element Into View    xpath:/html/body/main/article/div[5]/div
+    Page Should Contain    Yhteystiedot ja saapuminen
+    Sleep    1
+    Go Back
+
+    #Lepaa
+    Sleep    1
+
+    Click Link    xpath:/html/body/main/article/div[6]/div/article[4]/div/h3/a
+    Page Should Contain    Lepaan kampus
+    Sleep    1
+
+    Scroll Element Into View    xpath:/html/body/main/article/div[5]/div
+    Page Should Contain    Yhteystiedot ja saapuminen
+    Sleep    1
+    Go Back
+
+    #Mustiala
+    Sleep    1
+
+    Click Link    xpath:/html/body/main/article/div[6]/div/article[5]/div/h3/a
+    Page Should Contain    Mustialan kampus
+    Sleep    1
+
+    Scroll Element Into View    xpath:/html/body/main/article/div[5]/div
+    Page Should Contain    Yhteystiedot ja saapuminen
+    Sleep    1
+    Go Back
+
+    #Riihimäki
+    Sleep    1
+
+    Click Link    xpath:/html/body/main/article/div[6]/div/article[6]/div/h3/a
+    Page Should Contain    Riihimäen kampus
+    Sleep    1
+
+    Scroll Element Into View    xpath:/html/body/main/article/div[4]/div
+    #xpath:/html/body/main/article/div[5]/div
+    Page Should Contain    Yhteystiedot ja saapuminen
+    Sleep    1
+    Go Back
+
+    #Valkeakoski
+    Sleep    1
+
+    Click Link    xpath:/html/body/main/article/div[6]/div/article[7]/div/h3/a
+    Page Should Contain    Valkeakosken kampus
+    Sleep    1
+
+    Scroll Element Into View    xpath:/html/body/main/article/div[5]/div
+    Page Should Contain    Yhteystiedot ja saapuminen
+    Sleep    1
+    Close Browser
