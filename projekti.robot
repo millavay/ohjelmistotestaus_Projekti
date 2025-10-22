@@ -37,7 +37,7 @@ Testaa "Ajankohtaista"-osion artikkelit, kohta 1
 
 
 *** Test Cases ***
-Open browser and search services kohta 2
+Hae services ja tarkista että linkki vie oikealle sivulle kohta 2
     Open Browser    http://hamk.fi    Chrome
     ...    options=add_experimental_option("detach", True)
    
@@ -66,7 +66,7 @@ Open browser and search services kohta 2
 
 
 *** Test Cases ***
-Take a screenshot from the first article kohta 3
+Ota kuvankaappaus ensimmäisen artikkelin kuvaelementistä kohta 3
     # paina artikkelit 
     Open Browser    http://hamk.fi    Chrome
     ...    options=add_experimental_option("detach", True)
@@ -146,3 +146,49 @@ Testaa että moodle linkki toimii testi 6
     Log    ${location}
 
     Location Should Be    https://learn.hamk.fi/
+
+
+*** Test Cases ***
+Testaa että opiskelijan työkalut sivulla kaikki linkit toimivat testi 7
+
+    Open Browser    http://hamk.fi    Chrome
+    ...    options=add_experimental_option("detach", True)
+   
+    Maximize Browser Window
+
+    Sleep    3
+
+    Click Button    id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll
+    
+    Click Button    Opiskelijan sivut
+
+    Click Element    xpath:/html/body/header/div/div/div/nav/div/ul/li[4]/ul/li[4]
+
+    Sleep    2
+
+    Click Link    https://hamk.opinto-opas.fi/home
+    Wait Until Element Is Visible    xpath:/html/body/div[1]/div[2]/div/div/h1
+    Element Text Should Be    xpath:/html/body/div[1]/div[2]/div/div/h1    Opinto-opas
+    Go Back
+
+    Click Link    https://www.hamk.fi/opiskelijalle/opintojen-suunnittelu/moduulikartat/
+    Get Location
+    Location Should Be    https://www.hamk.fi/opiskelijalle/opintojen-suunnittelu/moduulikartat/
+    Go Back
+
+    Click Link    https://lukkarit.hamk.fi/#/schedule
+    Sleep    1
+    Get Location
+    Location Should Be    https://lukkarit.hamk.fi/#/schedule
+    Go Back
+
+    Scroll Element Into View    xpath:/html/body/main/article/div[3]/div[1]/h2
+    Click Link    https://create.plandisc.com/wheel/showPublic/biM3pwF
+    Sleep    1
+    Get Location
+    Location Should Be    https://create.plandisc.com/wheel/showPublic/biM3pwF
+    Go Back
+
+    Sleep    2
+
+    Close Browser
