@@ -147,6 +147,50 @@ Testaa että moodle linkki toimii testi 6
 
     Location Should Be    https://learn.hamk.fi/
 
+
+*** Test Cases ***
+Testaa että opiskelijan työkalut sivulla kaikki linkit toimivat testi 7
+
+    Open Browser    http://hamk.fi    Chrome
+    ...    options=add_experimental_option("detach", True)
+   
+    Maximize Browser Window
+
+    Sleep    3
+
+    Click Button    id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll
+    
+    Click Button    Opiskelijan sivut
+
+    Click Element    xpath:/html/body/header/div/div/div/nav/div/ul/li[4]/ul/li[4]
+
+    Sleep    2
+
+    Click Link    https://hamk.opinto-opas.fi/home
+    Wait Until Element Is Visible    xpath:/html/body/div[1]/div[2]/div/div/h1
+    Element Text Should Be    xpath:/html/body/div[1]/div[2]/div/div/h1    Opinto-opas
+    Go Back
+
+    Click Link    https://www.hamk.fi/opiskelijalle/opintojen-suunnittelu/moduulikartat/
+    Get Location
+    Location Should Be    https://www.hamk.fi/opiskelijalle/opintojen-suunnittelu/moduulikartat/
+    Go Back
+
+    Click Link    https://lukkarit.hamk.fi/#/schedule
+    Sleep    1
+    Get Location
+    Location Should Be    https://lukkarit.hamk.fi/#/schedule
+    Go Back
+
+    Scroll Element Into View    xpath:/html/body/main/article/div[3]/div[1]/h2
+    Click Link    https://create.plandisc.com/wheel/showPublic/biM3pwF
+    Sleep    1
+    Get Location
+    Location Should Be    https://create.plandisc.com/wheel/showPublic/biM3pwF
+    Go Back
+
+    Close Browser
+
 *** Test Cases ***
 Milun projekti testi
     Open browser    http://www.hamk.fi    Chrome
@@ -186,7 +230,6 @@ Milun projekti testi
     Sleep    2
     Capture Page Screenshot
 
-<<<<<<< HEAD
     Close Browser
 
 *** Test Cases ***
@@ -289,11 +332,3 @@ Tarkistetaan että kampuslinkit toimii ja sivuilla on yhteystiedot testi 8
     Page Should Contain    Yhteystiedot ja saapuminen
     Sleep    1
     Close Browser
-=======
-    Sleep    3
-
-    # Yritä silti klikata, bugi
-    Click Element    xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/
-
-    
->>>>>>> 64ae6dc5fcf33ace04c0829804d6b23e0dcb66cd
