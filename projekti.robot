@@ -191,11 +191,10 @@ Testi 7
     ${onko_nakyvissa}=    Run Keyword And Return Status    Element Should Be Visible    xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div
     Run Keyword If    not ${onko_nakyvissa}    Log To Console    "Elementti ei ole näkyvissä ennen skrollausta"
 
-    Scroll Element Into View    xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div
-    Sleep    2
+    Scroll Element Into View    xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div/div/a
     
-    # Yritä silti klikata, bugi
-    Click Element    xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/
+    Sleep    2
+    Click Element    xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div/div/a
 
 *** Test Cases ***
 # Mea Närhi
@@ -297,4 +296,77 @@ Tarkistetaan että kampuslinkit toimii ja sivuilla on yhteystiedot testi 8
     Scroll Element Into View    xpath:/html/body/main/article/div[5]/div
     Page Should Contain    Yhteystiedot ja saapuminen
     Sleep    1
+    Close Browser
+
+    
+*** Test Cases ***
+Uutisten hakutulokset toimii kohta 9
+
+    Open Browser    http://www.hamk.fi/   Chrome
+    ...    options=add_experimental_option("detach", True)     #sivu ei sulkeudu heti
+    Maximize Browser Window
+    Sleep   1
+    Click Button    id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll
+    Sleep   1
+
+    Scroll Element Into View    xpath:/html/body/main/article/div[2]/div[1]/div[2]
+    Sleep    1
+    Click Link    xpath:/html/body/main/article/div[2]/div[1]/div[1]/div/div/a
+    Sleep    2
+    Scroll Element Into View    xpath:/html/body/main/article/div[3]/div/div[1]/div[2]
+    Sleep    2
+
+    Click Element    xpath:/html/body/main/article/div[3]/div/div[1]/div[1]/div[1]/div[2]/input
+    #Input Text    id=site-content    tradenomi
+    Input Text    xpath://input[@class='em-search-input__input']    tradenomi
+    Sleep    2
+
+    #Click Element    xpath:/html/body/main/article/div[3]/div/div[1]/div[1]/div[2]/div[2]/div
+    
+    Scroll Element Into View    xpath:/html/body/main/article/div[3]/div/div[2]/div[1]
+    Sleep    3
+    Page Should Contain    tradenomi
+
+
+*** Test Cases ***
+Testaa että opiskelijan työkalut sivulla kaikki linkit toimivat testi 10
+
+    Open Browser    http://hamk.fi    Chrome
+    ...    options=add_experimental_option("detach", True)
+   
+    Maximize Browser Window
+
+    Sleep    3
+
+    Click Button    id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll
+    
+    Click Button    Opiskelijan sivut
+
+    Click Element    xpath:/html/body/header/div/div/div/nav/div/ul/li[4]/ul/li[4]
+
+    Sleep    2
+
+    Click Link    https://hamk.opinto-opas.fi/home
+    Wait Until Element Is Visible    xpath:/html/body/div[1]/div[2]/div/div/h1
+    Element Text Should Be    xpath:/html/body/div[1]/div[2]/div/div/h1    Opinto-opas
+    Go Back
+
+    Click Link    https://www.hamk.fi/opiskelijalle/opintojen-suunnittelu/moduulikartat/
+    Get Location
+    Location Should Be    https://www.hamk.fi/opiskelijalle/opintojen-suunnittelu/moduulikartat/
+    Go Back
+
+    Click Link    https://lukkarit.hamk.fi/#/schedule
+    Sleep    1
+    Get Location
+    Location Should Be    https://lukkarit.hamk.fi/#/schedule
+    Go Back
+
+    Scroll Element Into View    xpath:/html/body/main/article/div[3]/div[1]/h2
+    Click Link    https://create.plandisc.com/wheel/showPublic/biM3pwF
+    Sleep    1
+    Get Location
+    Location Should Be    https://create.plandisc.com/wheel/showPublic/biM3pwF
+    Go Back
+
     Close Browser
