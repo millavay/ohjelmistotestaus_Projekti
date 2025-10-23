@@ -1,170 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<robot generator="Robot 7.3.2 (Python 3.13.0 on win32)" generated="2025-10-21T14:07:06.178813" rpa="false" schemaversion="5">
-<suite id="s1" name="Projekti" source="c:\ohjelmistotestaus_Projekti\projekti.robot">
-<test id="s1-t1" name="Open browser and search services kohta 2" line="40">
+<robot generator="Robot 7.3.2 (Python 3.13.0 on win32)" generated="2025-10-23T13:19:29.924007" rpa="false" schemaversion="5">
+<suite id="s1" name="Projekti" source="c:\Users\meana\Desktop\ohjelmistotestaus_Projekti\projekti.robot">
+<test id="s1-t1" name="Milun projekti testi" line="151">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-10-21T14:07:06.985534" level="INFO">Opening browser 'Chrome' to base url 'http://hamk.fi'.</msg>
-=======
-<robot generator="Robot 7.3.2 (Python 3.13.0 on win32)" generated="2025-10-22T13:49:26.627346" rpa="false" schemaversion="5">
-<suite id="s1" name="Projekti" source="c:\Users\lavil\OneDrive - Hämeen ammattikorkeakoulu\ohjelmistotestaus_Projekti\projekti.robot">
-<test id="s1-t1" name="Ota kuvankaappaus ensimmäisen artikkelin kuvaelementistä kohta 3" line="69">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-10-22T13:49:27.067457" level="INFO">Opening browser 'Chrome' to base url 'http://hamk.fi'.</msg>
->>>>>>> 08b181aee1087b20a776ead01c20b3aab837a952
-<arg>http://hamk.fi</arg>
+<msg time="2025-10-23T13:19:30.693573" level="INFO">Opening browser 'Chrome' to base url 'http://www.hamk.fi'.</msg>
+<arg>http://www.hamk.fi</arg>
 <arg>Chrome</arg>
 <arg>options=add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2025-10-21T14:07:06.984362" elapsed="4.405257"/>
+<status status="PASS" start="2025-10-23T13:19:30.692519" elapsed="2.854281"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-10-21T14:07:11.391065" elapsed="0.119329"/>
+<status status="PASS" start="2025-10-23T13:19:33.548450" elapsed="0.235366"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-21T14:07:14.514383" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-10-23T13:19:36.786113" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-21T14:07:11.513494" elapsed="3.001524"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-21T14:07:14.517394" level="INFO">Clicking button 'id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll'.</msg>
-<arg>id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-21T14:07:14.516506" elapsed="0.090032"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-21T14:07:14.607590" level="INFO">Clicking button 'xpath:/html/body/header/div/div/div/div[2]/div[1]/button'.</msg>
-<arg>xpath:/html/body/header/div/div/div/div[2]/div[1]/button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-21T14:07:14.607138" elapsed="0.181229"/>
+<status status="PASS" start="2025-10-23T13:19:33.785120" elapsed="3.001542"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-21T14:07:14.789404" level="INFO">Clicking element 'id:site-search-input'.</msg>
-<arg>id:site-search-input</arg>
+<msg time="2025-10-23T13:19:36.791127" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div[4]/div[1]/div/div[2]/button[4]'.</msg>
+<arg>xpath:/html/body/div[1]/div/div[4]/div[1]/div/div[2]/button[4]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-21T14:07:14.788952" elapsed="0.167170"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-21T14:07:14.959981" level="INFO">Typing text 'services' into text field 'id:site-search-input'.</msg>
-<arg>id:site-search-input</arg>
-<arg>services</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-21T14:07:14.959159" elapsed="0.126963"/>
+<status status="PASS" start="2025-10-23T13:19:36.789875" elapsed="0.148026"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-21T14:07:19.090363" level="INFO">Slept 4 seconds.</msg>
+<msg time="2025-10-23T13:19:37.940172" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-23T13:19:36.939163" elapsed="1.001757"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-23T13:19:37.943030" level="INFO">Clicking element 'xpath:/html/body/main/article/div[1]/div/div/div/div[2]/div/div/a'.</msg>
+<arg>xpath:/html/body/main/article/div[1]/div/div/div/div[2]/div/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T13:19:37.942254" elapsed="0.623712"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-23T13:19:41.568421" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-23T13:19:38.567262" elapsed="3.001643"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-23T13:19:41.571963" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/button'.</msg>
+<arg>xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T13:19:41.570553" elapsed="0.173721"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-23T13:19:42.747299" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-23T13:19:41.745836" elapsed="1.002107"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-23T13:19:42.750787" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/div/div[2]/label'.</msg>
+<arg>xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/div/div[2]/label</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T13:19:42.749684" elapsed="0.233381"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-23T13:19:43.986011" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-23T13:19:42.984361" elapsed="1.002168"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-23T13:19:43.989900" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div/div[2]/div[2]/div[1]/article[3]/a'.</msg>
+<arg>xpath:/html/body/main/article/div[2]/div/div[2]/div[2]/div[1]/article[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-23T13:19:43.988608" elapsed="1.270877"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-23T13:19:49.261724" level="INFO">Slept 4 seconds.</msg>
 <arg>4</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-21T14:07:15.088472" elapsed="4.002434"/>
+<status status="PASS" start="2025-10-23T13:19:45.260561" elapsed="4.001834"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-10-21T14:07:19.117993" level="INFO">${otsikko} = Markku Mikkonen</msg>
+<msg time="2025-10-23T13:19:49.576048" level="INFO">${otsikko} = Com­puter Ap­plic­a­tions</msg>
 <var>${otsikko}</var>
-<arg>xpath:/html/body/div[3]/div[2]/div/div/div/div[2]/article[1]/div/h3</arg>
+<arg>xpath://main//h1</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-21T14:07:19.091671" elapsed="0.026652"/>
+<status status="PASS" start="2025-10-23T13:19:49.263667" elapsed="0.312819"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2025-10-21T14:07:19.119344" level="INFO">Markku Mikkonen</msg>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-23T13:19:49.612225" level="INFO">Current page contains text 'Com­puter Ap­plic­a­tions'.</msg>
 <arg>${otsikko}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-10-21T14:07:19.119078" elapsed="0.000454"/>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-10-23T13:19:49.577533" elapsed="0.035163"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2025-10-23T13:19:50.369670" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-23T13:19:50.370155" level="FAIL">The element 'xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div' should be visible, but it is not.</msg>
+<arg>xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="FAIL" start="2025-10-23T13:19:49.614491" elapsed="0.763800">The element 'xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div' should be visible, but it is not.</status>
+</kw>
+<msg time="2025-10-23T13:19:50.379076" level="INFO">${onko_nakyvissa} = False</msg>
+<var>${onko_nakyvissa}</var>
+<arg>Element Should Be Visible</arg>
+<arg>xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-10-23T13:19:49.613769" elapsed="0.765596"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>"Elementti ei ole näkyvissä ennen skrollausta"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-10-23T13:19:50.382017" elapsed="0.001777"/>
+</kw>
+<arg>not ${onko_nakyvissa}</arg>
+<arg>Log To Console</arg>
+<arg>"Elementti ei ole näkyvissä ennen skrollausta"</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-10-23T13:19:50.380738" elapsed="0.003474"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div/div/a</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-10-23T13:19:50.386116" elapsed="0.573187"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-23T13:19:52.961849" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-23T13:19:50.960693" elapsed="2.001702"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-21T14:07:19.120464" level="INFO">Clicking element 'xpath:/html/body/div[3]/div[2]/div/div/div/div[2]/article[1]/div/h3'.</msg>
-<arg>xpath:/html/body/div[3]/div[2]/div/div/div/div[2]/article[1]/div/h3</arg>
+<msg time="2025-10-23T13:19:52.964618" level="INFO">Clicking element 'xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div/div/a'.</msg>
+<msg time="2025-10-23T13:19:54.320875" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-23T13:19:54.322952" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="wp-block-button__link wp-element-button" href="https://www.hamk.fi/en/student-pages/study-modes-and-methods/"&gt;...&lt;/a&gt; is not clickable at point (714, 653). Other element would receive the click: &lt;button class="expandable-card__button js-expandable-card-button" type="button" aria-expanded="false"&gt;...&lt;/button&gt;
+  (Session info: chrome=141.0.7390.78); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff765fce8e5+80021]
+	GetHandleVerifier [0x0x7ff765fce940+80112]
+	(No symbol) [0x0x7ff765d5060f]
+	(No symbol) [0x0x7ff765db0a39]
+	(No symbol) [0x0x7ff765dae3be]
+	(No symbol) [0x0x7ff765dab2e1]
+	(No symbol) [0x0x7ff765daa1a0]
+	(No symbol) [0x0x7ff765d9b7c8]
+	(No symbol) [0x0x7ff765dd122a]
+	(No symbol) [0x0x7ff765d9b056]
+	(No symbol) [0x0x7ff765dd1440]
+	(No symbol) [0x0x7ff765df968a]
+	(No symbol) [0x0x7ff765dd1003]
+	(No symbol) [0x0x7ff765d995d1]
+	(No symbol) [0x0x7ff765d9a3f3]
+	GetHandleVerifier [0x0x7ff76628dc7d+2960429]
+	GetHandleVerifier [0x0x7ff766287f3a+2936554]
+	GetHandleVerifier [0x0x7ff7662a8977+3070247]
+	GetHandleVerifier [0x0x7ff765fe83ce+185214]
+	GetHandleVerifier [0x0x7ff765fefe1f+216527]
+	GetHandleVerifier [0x0x7ff765fd7b24+117460]
+	GetHandleVerifier [0x0x7ff765fd7cdf+117903]
+	GetHandleVerifier [0x0x7ff765fbdbb8+11112]
+	BaseThreadInitThunk [0x0x7ff8b0c2e8d7+23]
+	RtlUserThreadStart [0x0x7ff8b19ec53c+44]
+</msg>
+<arg>xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div/div/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-21T14:07:19.120126" elapsed="1.075464"/>
+<status status="FAIL" start="2025-10-23T13:19:52.963819" elapsed="1.489740">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="wp-block-button__link wp-element-button" href="https://www.hamk.fi/en/student-pages/study-modes-and-methods/"&gt;...&lt;/a&gt; is not clickable at point (714, 653). Other element would receive the click: &lt;button class="expandable-card__button js-expandable-card-button" type="button" aria-expanded="false"&gt;...&lt;/button&gt;
+  (Session info: chrome=141.0.7390.78); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff765fce8e5+80021]
+	GetHandleVerifier [0x0x7ff765fce940+80112]
+	(No symbol) [0x0x7ff765d5060f]
+	(No symbol) [0x0x7ff765db0a39]
+	(No symbol) [0x0x7ff765dae3be]
+	(No symbol) [0x0x7ff765dab2e1]
+	(No symbol) [0x0x7ff765daa1a0]
+	(No symbol) [0x0x7ff765d9b7c8]
+	(No symbol) [0x0x7ff765dd122a]
+	(No symbol) [0x0x7ff765d9b056]
+	(No symbol) [0x0x7ff765dd1440]
+	(No symbol) [0x0x7ff765df968a]
+	(No symbol) [0x0x7ff765dd1003]
+	(No symbol) [0x0x7ff765d995d1]
+	(No symbol) [0x0x7ff765d9a3f3]
+	GetHandleVerifier [0x0x7ff76628dc7d+2960429]
+	GetHandleVerifier [0x0x7ff766287f3a+2936554]
+	GetHandleVerifier [0x0x7ff7662a8977+3070247]
+	GetHandleVerifier [0x0x7ff765fe83ce+185214]
+	GetHandleVerifier [0x0x7ff765fefe1f+216527]
+	GetHandleVerifier [0x0x7ff765fd7b24+117460]
+	GetHandleVerifier [0x0x7ff765fd7cdf+117903]
+	GetHandleVerifier [0x0x7ff765fbdbb8+11112]
+	BaseThreadInitThunk [0x0x7ff8b0c2e8d7+23]
+	RtlUserThreadStart [0x0x7ff8b19ec53c+44]
+</status>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-21T14:07:23.199450" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-21T14:07:20.197956" elapsed="3.001751"/>
-</kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-10-21T14:07:23.200693" level="INFO">Verifying element 'xpath:/html/body/main/article/div[2]/div[2]/p[1]' contains exact text 'Markku Mikkonen'.</msg>
-<arg>xpath:/html/body/main/article/div[2]/div[2]/p[1]</arg>
-<arg>${otsikko}</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-10-21T14:07:23.200266" elapsed="0.033192"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-10-21T14:07:23.234075" elapsed="2.306134"/>
-</kw>
-<status status="PASS" start="2025-10-21T14:07:06.983302" elapsed="18.557523"/>
+<status status="FAIL" start="2025-10-23T13:19:30.690055" elapsed="23.765932">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="wp-block-button__link wp-element-button" href="https://www.hamk.fi/en/student-pages/study-modes-and-methods/"&gt;...&lt;/a&gt; is not clickable at point (714, 653). Other element would receive the click: &lt;button class="expandable-card__button js-expandable-card-button" type="button" aria-expanded="false"&gt;...&lt;/button&gt;
+  (Session info: chrome=141.0.7390.78); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff765fce8e5+80021]
+	GetHandleVerifier [0x0x7ff765fce940+80112]
+	(No symbol) [0x0x7ff765d5060f]
+	(No symbol) [0x0x7ff765db0a39]
+	(No symbol) [0x0x7ff765dae3be]
+	(No symbol) [0x0x7ff765dab2e1]
+	(No symbol) [0x0x7ff765daa1a0]
+	(No symbol) [0x0x7ff765d9b7c8]
+	(No symbol) [0x0x7ff765dd122a]
+	(No symbol) [0x0x7ff765d9b056]
+	(No symbol) [0x0x7ff765dd1440]
+	(No symbol) [0x0x7ff765df968a]
+	(No symbol) [0x0x7ff765dd1003]
+	(No symbol) [0x0x7ff765d995d1]
+	(No symbol) [0x0x7ff765d9a3f3]
+	GetHandleVerifier [0x0x7ff76628dc7d+2960429]
+	GetHandleVerifier [0x0x7ff766287f3a+2936554]
+	GetHandleVerifier [0x0x7ff7662a8977+3070247]
+	GetHandleVerifier [0x0x7ff765fe83ce+185214]
+	GetHandleVerifier [0x0x7ff765fefe1f+216527]
+	GetHandleVerifier [0x0x7ff765fd7b24+117460]
+	GetHandleVerifier [0x0x7ff765fd7cdf+117903]
+	GetHandleVerifier [0x0x7ff765fbdbb8+11112]
+	BaseThreadInitThunk [0x0x7ff8b0c2e8d7+23]
+	RtlUserThreadStart [0x0x7ff8b19ec53c+44]
+</status>
 </test>
-<status status="PASS" start="2025-10-21T14:07:06.188947" elapsed="19.353226"/>
-=======
-<status status="PASS" start="2025-10-22T13:49:27.066872" elapsed="2.321508"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-10-22T13:49:29.390009" elapsed="0.123342"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-22T13:49:34.516985" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-22T13:49:29.514506" elapsed="5.003654"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-22T13:49:34.521547" level="INFO">Clicking button 'id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll'.</msg>
-<arg>id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-22T13:49:34.520172" elapsed="0.297234"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-10-22T13:49:34.820518" level="INFO">Clicking button 'xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[1]/button'.</msg>
-<arg>xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[1]/button</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-22T13:49:34.819713" elapsed="0.694574"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-22T13:49:38.518036" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-22T13:49:35.516481" elapsed="3.002583"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-22T13:49:38.522164" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div[1]/div[2]/div[1]/article[1]'.</msg>
-<arg>xpath:/html/body/main/article/div[2]/div[1]/div[2]/div[1]/article[1]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-22T13:49:38.521208" elapsed="1.301165"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-22T13:49:42.824912" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-22T13:49:39.823830" elapsed="3.001947"/>
-</kw>
-<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
-<msg time="2025-10-22T13:49:43.115333" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-1.png"&gt;&lt;img src="selenium-element-screenshot-1.png" width="400px"&gt;&lt;/a&gt;</msg>
-<arg>xpath:/html/body/main/article/div[3]/figure/img</arg>
-<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
-<status status="PASS" start="2025-10-22T13:49:42.827508" elapsed="0.288651"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-10-22T13:49:43.118137" elapsed="2.297075"/>
-</kw>
-<status status="PASS" start="2025-10-22T13:49:27.065181" elapsed="18.351681"/>
-</test>
-<status status="PASS" start="2025-10-22T13:49:26.635760" elapsed="18.784544"/>
->>>>>>> 08b181aee1087b20a776ead01c20b3aab837a952
+<status status="FAIL" start="2025-10-23T13:19:29.938470" elapsed="24.522032"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Projekti" id="s1" pass="1" fail="0" skip="0">Projekti</stat>
+<stat name="Projekti" id="s1" pass="0" fail="1" skip="0">Projekti</stat>
 </suite>
 </statistics>
 <errors>
