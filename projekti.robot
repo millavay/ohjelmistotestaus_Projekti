@@ -297,3 +297,32 @@ Tarkistetaan että kampuslinkit toimii ja sivuilla on yhteystiedot testi 8
     Page Should Contain    Yhteystiedot ja saapuminen
     Sleep    1
     Close Browser
+
+    
+*** Test Cases ***
+Uutisten hakutulokset toimii kohta 9
+
+    Open Browser    http://www.hamk.fi/   Chrome
+    ...    options=add_experimental_option("detach", True)     #sivu ei sulkeudu heti
+    Maximize Browser Window
+    Sleep   1
+    Click Button    id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll
+    Sleep   1
+
+    Scroll Element Into View    xpath:/html/body/main/article/div[2]/div[1]/div[2]
+    Sleep    1
+    Click Link    xpath:/html/body/main/article/div[2]/div[1]/div[1]/div/div/a
+    Sleep    2
+    Scroll Element Into View    xpath:/html/body/main/article/div[3]/div/div[1]/div[2]
+    Sleep    2
+
+    Click Element    xpath:/html/body/main/article/div[3]/div/div[1]/div[1]/div[1]/div[2]/input
+    #Input Text    id=site-content    tradenomi
+    Input Text    xpath://input[@class='em-search-input__input']    tradenomi
+    Sleep    2
+
+    #Click Element    xpath:/html/body/main/article/div[3]/div/div[1]/div[1]/div[2]/div[2]/div
+    
+    Scroll Element Into View    xpath:/html/body/main/article/div[3]/div/div[2]/div[1]
+    Sleep    3
+    Page Should Contain    tradenomi
