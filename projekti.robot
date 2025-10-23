@@ -157,7 +157,7 @@ Testaa että moodle linkki toimii testi 6
 
 *** Test Cases ***
 # Milla Väyrynen
-Testi 7
+Testaa computer applications ja opintopolku linkin Testi 7
 
     Open browser    http://www.hamk.fi    Chrome
     ...    options=add_experimental_option("detach", True)
