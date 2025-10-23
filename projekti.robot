@@ -2,6 +2,7 @@
 Library    SeleniumLibrary
 
 *** Test Cases ***
+# Mea Närhi
 Testaa "Ajankohtaista"-osion artikkelit, kohta 1
 
     Open Browser    http://www.hamk.fi/   Chrome
@@ -37,6 +38,7 @@ Testaa "Ajankohtaista"-osion artikkelit, kohta 1
 
 
 *** Test Cases ***
+# Laura Vilkman
 Hae services ja tarkista että linkki vie oikealle sivulle kohta 2
     Open Browser    http://hamk.fi    Chrome
     ...    options=add_experimental_option("detach", True)
@@ -66,6 +68,7 @@ Hae services ja tarkista että linkki vie oikealle sivulle kohta 2
 
 
 *** Test Cases ***
+# Laura Vilkman
 Ota kuvankaappaus ensimmäisen artikkelin kuvaelementistä kohta 3
     # paina artikkelit 
     Open Browser    http://hamk.fi    Chrome
@@ -93,6 +96,7 @@ Ota kuvankaappaus ensimmäisen artikkelin kuvaelementistä kohta 3
 
 
 *** Test Cases ***
+# Milla Väyrynen
 Hamk testaus kohta 4
 
     Open browser    http://www.hamk.fi    Chrome
@@ -113,12 +117,16 @@ Hamk testaus kohta 4
     Click Element    xpath:/html/body/main/article/div[2]/div/div[3]/div/div[1]/article[1]/div[2]/div[3]/a
     Sleep    3
 
+*** Test Cases ***
+# Milla Väyrynen
+anna tälle nimi testi 5
     ${nimi}=        Get Text    xpath:/html/body/main/article/div[1]/div/h1
     Page Should Contain    ${nimi}
 
 
 
 *** Test Cases ***
+# Laura Vilkman
 Testaa että moodle linkki toimii testi 6
 
     # avaa selain
@@ -148,6 +156,7 @@ Testaa että moodle linkki toimii testi 6
     Location Should Be    https://learn.hamk.fi/
 
 *** Test Cases ***
+# Milla Väyrynen
 Milun projekti testi
     Open browser    http://www.hamk.fi    Chrome
     ...    options=add_experimental_option("detach", True)
@@ -188,6 +197,7 @@ Milun projekti testi
     Click Element    xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div/div/a
 
 *** Test Cases ***
+# Mea Närhi
 Tarkistetaan että kampuslinkit toimii ja sivuilla on yhteystiedot testi 8
 
     Open Browser    http://www.hamk.fi/   Chrome
