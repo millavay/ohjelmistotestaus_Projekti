@@ -304,6 +304,7 @@ Tarkistetaan että kampuslinkit toimii ja sivuilla on yhteystiedot testi 8
 
     
 *** Test Cases ***
+# Mea Närhi
 Uutisten hakutulokset toimii kohta 9
 
     Open Browser    http://www.hamk.fi/   Chrome
@@ -333,6 +334,7 @@ Uutisten hakutulokset toimii kohta 9
 
 
 *** Test Cases ***
+# Laura Vilkman
 Testaa että opiskelijan työkalut sivulla kaikki linkit toimivat testi 10
 
     Open Browser    http://hamk.fi    Chrome
