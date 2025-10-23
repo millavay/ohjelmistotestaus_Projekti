@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <robot generator="Robot 7.3.2 (Python 3.13.0 on win32)" generated="2025-10-21T14:07:06.178813" rpa="false" schemaversion="5">
 <suite id="s1" name="Projekti" source="c:\ohjelmistotestaus_Projekti\projekti.robot">
 <test id="s1-t1" name="Open browser and search services kohta 2" line="40">
 <kw name="Open Browser" owner="SeleniumLibrary">
 <msg time="2025-10-21T14:07:06.985534" level="INFO">Opening browser 'Chrome' to base url 'http://hamk.fi'.</msg>
+=======
+<robot generator="Robot 7.3.2 (Python 3.13.0 on win32)" generated="2025-10-22T13:49:26.627346" rpa="false" schemaversion="5">
+<suite id="s1" name="Projekti" source="c:\Users\lavil\OneDrive - Hämeen ammattikorkeakoulu\ohjelmistotestaus_Projekti\projekti.robot">
+<test id="s1-t1" name="Ota kuvankaappaus ensimmäisen artikkelin kuvaelementistä kohta 3" line="69">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-22T13:49:27.067457" level="INFO">Opening browser 'Chrome' to base url 'http://hamk.fi'.</msg>
+>>>>>>> 08b181aee1087b20a776ead01c20b3aab837a952
 <arg>http://hamk.fi</arg>
 <arg>Chrome</arg>
 <arg>options=add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
+<<<<<<< HEAD
 <status status="PASS" start="2025-10-21T14:07:06.984362" elapsed="4.405257"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
@@ -90,6 +99,63 @@
 <status status="PASS" start="2025-10-21T14:07:06.983302" elapsed="18.557523"/>
 </test>
 <status status="PASS" start="2025-10-21T14:07:06.188947" elapsed="19.353226"/>
+=======
+<status status="PASS" start="2025-10-22T13:49:27.066872" elapsed="2.321508"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-22T13:49:29.390009" elapsed="0.123342"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-22T13:49:34.516985" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-22T13:49:29.514506" elapsed="5.003654"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-22T13:49:34.521547" level="INFO">Clicking button 'id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll'.</msg>
+<arg>id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-22T13:49:34.520172" elapsed="0.297234"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-22T13:49:34.820518" level="INFO">Clicking button 'xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[1]/button'.</msg>
+<arg>xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-22T13:49:34.819713" elapsed="0.694574"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-22T13:49:38.518036" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-22T13:49:35.516481" elapsed="3.002583"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-22T13:49:38.522164" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div[1]/div[2]/div[1]/article[1]'.</msg>
+<arg>xpath:/html/body/main/article/div[2]/div[1]/div[2]/div[1]/article[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-22T13:49:38.521208" elapsed="1.301165"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-22T13:49:42.824912" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-22T13:49:39.823830" elapsed="3.001947"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2025-10-22T13:49:43.115333" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-element-screenshot-1.png"&gt;&lt;img src="selenium-element-screenshot-1.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>xpath:/html/body/main/article/div[3]/figure/img</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2025-10-22T13:49:42.827508" elapsed="0.288651"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-22T13:49:43.118137" elapsed="2.297075"/>
+</kw>
+<status status="PASS" start="2025-10-22T13:49:27.065181" elapsed="18.351681"/>
+</test>
+<status status="PASS" start="2025-10-22T13:49:26.635760" elapsed="18.784544"/>
+>>>>>>> 08b181aee1087b20a776ead01c20b3aab837a952
 </suite>
 <statistics>
 <total>
