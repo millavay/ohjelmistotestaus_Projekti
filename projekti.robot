@@ -147,4 +147,48 @@ Testaa että moodle linkki toimii testi 6
 
     Location Should Be    https://learn.hamk.fi/
 
+*** Test Cases ***
+Milun projekti testi
+    Open browser    http://www.hamk.fi    Chrome
+    ...    options=add_experimental_option("detach", True)
+    Maximize Browser Window
+
+    Sleep    3
+
+    #evästeet
+    Click Element    xpath:/html/body/div[1]/div/div[4]/div[1]/div/div[2]/button[4]
+    Sleep    1
+    
+    #Avaa koulutuslistaus
+    Click Element    xpath:/html/body/main/article/div[1]/div/div/div/div[2]/div/div/a
+    Sleep    3
+
+    #Avaa suodatin ja valitse vaihtoehto
+    Click Element    xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/button
+    Sleep    1
+    Click Element    xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/div/div[2]/label
+    Sleep    1
+
+    #Avaa kolmas kortti
+    Click Element    xpath:/html/body/main/article/div[2]/div/div[2]/div[2]/div[1]/article[3]/a
+    Sleep    4
+
+    #Otsikko löytyy sivulta
+    ${otsikko}=    Get Text    xpath://main//h1
+    Page Should Contain    ${otsikko}
+
+
+    # Tarkistus ennen bugia
+    ${onko_nakyvissa}=    Run Keyword And Return Status    Element Should Be Visible    xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div
+    Run Keyword If    not ${onko_nakyvissa}    Log To Console    "Elementti ei ole näkyvissä ennen skrollausta"
+
+    Scroll Element Into View    xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div
+    Sleep    2
+    Capture Page Screenshot
+
+    Sleep    3
+
+    # Yritä silti klikata, bugi
+    Click Element    xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/
+
     
