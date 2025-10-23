@@ -157,7 +157,7 @@ Testaa että moodle linkki toimii testi 6
 
 *** Test Cases ***
 # Milla Väyrynen
-Milun projekti testi
+Testi 7
     Open browser    http://www.hamk.fi    Chrome
     ...    options=add_experimental_option("detach", True)
     Maximize Browser Window
@@ -178,7 +178,7 @@ Milun projekti testi
     Click Element    xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/div/div[2]/label
     Sleep    1
 
-    #Avaa kolmas kortti
+    #Valitse koulutus
     Click Element    xpath:/html/body/main/article/div[2]/div/div[2]/div[2]/div[1]/article[3]/a
     Sleep    4
 
