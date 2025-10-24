@@ -97,23 +97,28 @@ Ota kuvankaappaus ensimmäisen artikkelin kuvaelementistä kohta 3
 
 *** Test Cases ***
 # Milla Väyrynen
-Hamk testaus kohta 4
+Etsii henkilön yhteystiedot Testi 4
 
     Open browser    http://www.hamk.fi    Chrome
     ...    options=add_experimental_option("detach", True)
     Maximize Browser Window
     Sleep    3
+    #evästeet
     Click Element    xpath:/html/body/div[1]/div/div[4]/div[1]/div/div[2]/button[4]
     Sleep    1
-
+    #Avaa tietoa meistä
     Click Element    xpath:/html/body/header/div/div/div/nav/div/ul/li[5]/button
+    #Yhteistiedot
     Click Element    xpath:/html/body/header/div/div/div/nav/div/ul/li[5]/ul/li[5]/a
     Sleep    1
+    #Hae henkilöä
     Click Element    xpath:/html/body/main/article/div[1]/div/div/div[2]/a
     Sleep    3
+    #Hae hakusanalla
     Click Element    xpath:/html/body/main/article/div[2]/div/div[1]/div[1]/div[1]/div[2]/input
     Input Text    xpath:/html/body/main/article/div[2]/div/div[1]/div[1]/div[1]/div[2]/input    Esa Huiskonen
     Sleep    3
+    #Avaa henkilön tiedot
     Click Element    xpath:/html/body/main/article/div[2]/div/div[3]/div/div[1]/article[1]/div[2]/div[3]/a
     Sleep    3
 
