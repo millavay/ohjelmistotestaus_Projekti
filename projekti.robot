@@ -32,9 +32,10 @@ Testaa "Ajankohtaista"-osion artikkelit, kohta 1
     #avataan ensimmäinen artikkeli
     Click Element    xpath:/html/body/main/article/div[2]/div[1]/div[2]/div[1]/article[1]/div[2]/h3/a
 
-    Sleep   2
-    #tarkistetaan että sivu täsmää aiheotsikkoon
-    Page Should Contain    Opinnoista uutta virtaa
+    ${artikkeli}=        Get Text    xpath:/html/body/main/article/h1
+    Element Should Contain    xpath:/html/body/main/article/h1    ${artikkeli}
+
+    Close Browser
 
 
 *** Test Cases ***
