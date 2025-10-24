@@ -119,7 +119,7 @@ Hamk testaus kohta 4
 
 *** Test Cases ***
 # Milla Väyrynen
-anna tälle nimi testi 5
+Tarkistaa nimen testi 5
     ${nimi}=        Get Text    xpath:/html/body/main/article/div[1]/div/h1
     Page Should Contain    ${nimi}
 
@@ -157,44 +157,48 @@ Testaa että moodle linkki toimii testi 6
 
 *** Test Cases ***
 # Milla Väyrynen
-Milun projekti testi
+Testaa computer applications ja opintopolku linkin Testi 7
+
     Open browser    http://www.hamk.fi    Chrome
     ...    options=add_experimental_option("detach", True)
     Maximize Browser Window
 
-    Sleep    3
+    Sleep    1
 
     #evästeet
     Click Element    xpath:/html/body/div[1]/div/div[4]/div[1]/div/div[2]/button[4]
     Sleep    1
     
-    #Avaa koulutuslistaus
+    #avaa koulutuslistaus
     Click Element    xpath:/html/body/main/article/div[1]/div/div/div/div[2]/div/div/a
     Sleep    3
-
-    #Avaa suodatin ja valitse vaihtoehto
+    #avaa suodatin ja valitse vaihtoehto
     Click Element    xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/button
     Sleep    1
     Click Element    xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/div/div[2]/label
     Sleep    1
 
-    #Avaa kolmas kortti
+    #avaa computer applications
     Click Element    xpath:/html/body/main/article/div[2]/div/div[2]/div[2]/div[1]/article[3]/a
+
     Sleep    4
 
-    #Otsikko löytyy sivulta
+    #otsikko löytyy sivulta
     ${otsikko}=    Get Text    xpath://main//h1
     Page Should Contain    ${otsikko}
 
-
-    # Tarkistus ennen bugia
-    ${onko_nakyvissa}=    Run Keyword And Return Status    Element Should Be Visible    xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div
-    Run Keyword If    not ${onko_nakyvissa}    Log To Console    "Elementti ei ole näkyvissä ennen skrollausta"
-
-    Scroll Element Into View    xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div/div/a
-    
+    # Vieritä hakuohjeisiin ja avaa opintopolku-linkki
+    Scroll Element Into View    xpath:/html/body/main/article/div[4]/div[2]/div/div/a
     Sleep    2
-    Click Element    xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div/div/a
+    Click Element    xpath:/html/body/main/article/div[4]/div[2]/div/div/a
+
+
+    # Vaihda uuteen välilehteen ja tarkista domain(enkku)
+    Switch Window    NEW
+    Location Should Contain    /en/
+    Run Keyword And Ignore Error    Location Should Contain    opintopolku.fi
+
+    
 
 *** Test Cases ***
 # Mea Närhi
@@ -300,6 +304,7 @@ Tarkistetaan että kampuslinkit toimii ja sivuilla on yhteystiedot testi 8
 
     
 *** Test Cases ***
+# Mea Närhi
 Uutisten hakutulokset toimii kohta 9
 
     Open Browser    http://www.hamk.fi/   Chrome
@@ -326,3 +331,48 @@ Uutisten hakutulokset toimii kohta 9
     Scroll Element Into View    xpath:/html/body/main/article/div[3]/div/div[2]/div[1]
     Sleep    3
     Page Should Contain    tradenomi
+
+
+*** Test Cases ***
+# Laura Vilkman
+Testaa että opiskelijan työkalut sivulla kaikki linkit toimivat testi 10
+
+    Open Browser    http://hamk.fi    Chrome
+    ...    options=add_experimental_option("detach", True)
+   
+    Maximize Browser Window
+
+    Sleep    3
+
+    Click Button    id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll
+    
+    Click Button    Opiskelijan sivut
+
+    Click Element    xpath:/html/body/header/div/div/div/nav/div/ul/li[4]/ul/li[4]
+
+    Sleep    2
+
+    Click Link    https://hamk.opinto-opas.fi/home
+    Wait Until Element Is Visible    xpath:/html/body/div[1]/div[2]/div/div/h1
+    Element Text Should Be    xpath:/html/body/div[1]/div[2]/div/div/h1    Opinto-opas
+    Go Back
+
+    Click Link    https://www.hamk.fi/opiskelijalle/opintojen-suunnittelu/moduulikartat/
+    Get Location
+    Location Should Be    https://www.hamk.fi/opiskelijalle/opintojen-suunnittelu/moduulikartat/
+    Go Back
+
+    Click Link    https://lukkarit.hamk.fi/#/schedule
+    Sleep    1
+    Get Location
+    Location Should Be    https://lukkarit.hamk.fi/#/schedule
+    Go Back
+
+    Scroll Element Into View    xpath:/html/body/main/article/div[3]/div[1]/h2
+    Click Link    https://create.plandisc.com/wheel/showPublic/biM3pwF
+    Sleep    1
+    Get Location
+    Location Should Be    https://create.plandisc.com/wheel/showPublic/biM3pwF
+    Go Back
+
+    Close Browser
