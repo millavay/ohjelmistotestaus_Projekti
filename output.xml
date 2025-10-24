@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <robot generator="Robot 7.3.2 (Python 3.13.0 on win32)" generated="2025-10-24T14:49:47.989779" rpa="false" schemaversion="5">
 <suite id="s1" name="Projekti" source="c:\ohjelmistotestaus_Projekti\projekti.robot">
 <test id="s1-t1" name="Etsii henkilön yhteystiedot Testi 4" line="101">
@@ -132,6 +133,139 @@
 <status status="PASS" start="2025-10-24T14:49:48.409690" elapsed="19.865482"/>
 </test>
 <status status="PASS" start="2025-10-24T14:49:47.996945" elapsed="20.279224"/>
+=======
+<robot generator="Robot 7.3.2 (Python 3.13.0 on win32)" generated="2025-10-24T13:14:51.372963" rpa="false" schemaversion="5">
+<suite id="s1" name="Projekti" source="c:\Users\meana\Desktop\ohjelmistotestaus_Projekti\projekti.robot">
+<test id="s1-t1" name="Testaa &quot;Ajankohtaista&quot;-osion artikkelit, kohta 1" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-10-24T13:14:51.830277" level="INFO">Opening browser 'Chrome' to base url 'http://www.hamk.fi/'.</msg>
+<arg>http://www.hamk.fi/</arg>
+<arg>Chrome</arg>
+<arg>options=add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-24T13:14:51.829883" elapsed="3.293365"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-10-24T13:14:55.125056" elapsed="0.129111"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-24T13:14:57.257958" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-24T13:14:55.255758" elapsed="2.002633"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-24T13:14:57.260946" level="INFO">Clicking button 'id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll'.</msg>
+<arg>id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-24T13:14:57.259632" elapsed="0.167276"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-24T13:14:59.428664" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-24T13:14:57.427693" elapsed="2.001509"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>//*[@id="site-content"]/article/div[2]/div[1]/div[2]/div[3]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-10-24T13:14:59.430078" elapsed="0.322947"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-24T13:15:01.754424" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-24T13:14:59.753552" elapsed="2.001202"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-24T13:15:01.756750" level="INFO">Clicking button 'xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[1]/button'.</msg>
+<arg>xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-24T13:15:01.756327" elapsed="0.134273"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-24T13:15:03.892944" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-24T13:15:01.891962" elapsed="2.001397"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-24T13:15:03.895555" level="INFO">Clicking button 'xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[2]/button'.</msg>
+<arg>xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-24T13:15:03.895105" elapsed="0.141632"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-24T13:15:06.038613" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-24T13:15:04.037565" elapsed="2.001457"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-24T13:15:06.040118" level="INFO">Clicking button 'xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[3]/button'.</msg>
+<arg>xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[3]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-24T13:15:06.039735" elapsed="0.130767"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-24T13:15:08.172881" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-24T13:15:06.171782" elapsed="2.001623"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-24T13:15:08.174686" level="INFO">Clicking button 'xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[4]/button'.</msg>
+<arg>xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[4]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-24T13:15:08.174327" elapsed="0.133452"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-24T13:15:10.309931" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-24T13:15:08.308798" elapsed="2.001813"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-24T13:15:10.312902" level="INFO">Clicking button 'xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[1]/button'.</msg>
+<arg>xpath:/html/body/main/article/div[2]/div[1]/div[1]/fieldset/div/div/div[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-24T13:15:10.312170" elapsed="0.150108"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-24T13:15:12.464181" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-24T13:15:10.463277" elapsed="2.001433"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-10-24T13:15:12.467684" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div[1]/div[2]/div[1]/article[1]/div[2]/h3/a'.</msg>
+<arg>xpath:/html/body/main/article/div[2]/div[1]/div[2]/div[1]/article[1]/div[2]/h3/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-24T13:15:12.466816" elapsed="0.733699"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-10-24T13:15:13.353771" level="INFO">${artikkeli} = Opis­ke­li­joi­den luoma start-up paik­kaa op­pi­mi­sen puut­tei­ta ver­tais­vi­deoi­den avul­la </msg>
+<var>${artikkeli}</var>
+<arg>xpath:/html/body/main/article/h1</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-24T13:15:13.202001" elapsed="0.152052"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-10-24T13:15:13.427178" level="INFO">Element 'xpath:/html/body/main/article/h1' contains text 'Opis­ke­li­joi­den luoma start-up paik­kaa op­pi­mi­sen puut­tei­ta ver­tais­vi­deoi­den avul­la '.</msg>
+<arg>xpath:/html/body/main/article/h1</arg>
+<arg>${artikkeli}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-10-24T13:15:13.354931" elapsed="0.072486"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-10-24T13:15:13.428077" elapsed="2.341250"/>
+</kw>
+<status status="PASS" start="2025-10-24T13:14:51.827385" elapsed="23.942529"/>
+</test>
+<status status="PASS" start="2025-10-24T13:14:51.380369" elapsed="24.391198"/>
+>>>>>>> fe66a856de9292cac769359dd0c197b3c01fb664
 </suite>
 <statistics>
 <total>
