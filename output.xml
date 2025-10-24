@@ -1,455 +1,436 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<robot generator="Robot 7.3.2 (Python 3.13.0 on win32)" generated="2025-10-23T13:19:29.924007" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.0 on win32)" generated="2025-10-24T11:16:37.173873" rpa="false" schemaversion="5">
 <suite id="s1" name="Projekti" source="c:\Users\meana\Desktop\ohjelmistotestaus_Projekti\projekti.robot">
-<test id="s1-t1" name="Milun projekti testi" line="151">
+<test id="s1-t1" name="Tarkistetaan että kampuslinkit toimii ja sivuilla on yhteystiedot testi 8" line="201">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:19:30.693573" level="INFO">Opening browser 'Chrome' to base url 'http://www.hamk.fi'.</msg>
-=======
-<robot generator="Robot 7.3.2 (Python 3.13.0 on win32)" generated="2025-10-23T12:58:10.979310" rpa="false" schemaversion="5">
-<suite id="s1" name="Projekti" source="c:\Users\lavil\OneDrive - Hämeen ammattikorkeakoulu\ohjelmistotestaus_Projekti\projekti.robot">
-<test id="s1-t1" name="Milun projekti testi" line="151">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-10-23T12:58:11.493965" level="INFO">Opening browser 'Chrome' to base url 'http://www.hamk.fi'.</msg>
->>>>>>> 755f6775985841ee89b962cfb5dc24136a7b2e07
-<arg>http://www.hamk.fi</arg>
+<msg time="2025-10-24T11:16:37.629920" level="INFO">Opening browser 'Chrome' to base url 'http://www.hamk.fi/'.</msg>
+<arg>http://www.hamk.fi/</arg>
 <arg>Chrome</arg>
 <arg>options=add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2025-10-23T13:19:30.692519" elapsed="2.854281"/>
+<status status="PASS" start="2025-10-24T11:16:37.629255" elapsed="2.456101"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-10-23T13:19:33.548450" elapsed="0.235366"/>
+<status status="PASS" start="2025-10-24T11:16:40.086550" elapsed="0.203413"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T13:19:36.786113" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T13:19:33.785120" elapsed="3.001542"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:19:36.791127" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div[4]/div[1]/div/div[2]/button[4]'.</msg>
-<arg>xpath:/html/body/div[1]/div/div[4]/div[1]/div/div[2]/button[4]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T13:19:36.789875" elapsed="0.148026"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T13:19:37.940172" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-24T11:16:41.292109" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T13:19:36.939163" elapsed="1.001757"/>
+<status status="PASS" start="2025-10-24T11:16:40.290857" elapsed="1.002302"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:19:37.943030" level="INFO">Clicking element 'xpath:/html/body/main/article/div[1]/div/div/div/div[2]/div/div/a'.</msg>
-<arg>xpath:/html/body/main/article/div[1]/div/div/div/div[2]/div/div/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T13:19:37.942254" elapsed="0.623712"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T13:19:41.568421" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T13:19:38.567262" elapsed="3.001643"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:19:41.571963" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/button'.</msg>
-<arg>xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T13:19:41.570553" elapsed="0.173721"/>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-24T11:16:41.295174" level="INFO">Clicking button 'id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll'.</msg>
+<arg>id:CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-24T11:16:41.294180" elapsed="0.169368"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T13:19:42.747299" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-24T11:16:42.465253" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T13:19:41.745836" elapsed="1.002107"/>
+<status status="PASS" start="2025-10-24T11:16:41.464244" elapsed="1.001474"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:19:42.750787" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/div/div[2]/label'.</msg>
-<arg>xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/div/div[2]/label</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T13:19:42.749684" elapsed="0.233381"/>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-10-24T11:16:42.467415" level="INFO">Clicking button 'xpath:/html/body/header/div/div/div/nav/div/ul/li[5]/button'.</msg>
+<arg>xpath:/html/body/header/div/div/div/nav/div/ul/li[5]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-24T11:16:42.466708" elapsed="0.244106"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T13:19:43.986011" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-24T11:16:43.712733" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T13:19:42.984361" elapsed="1.002168"/>
+<status status="PASS" start="2025-10-24T11:16:42.711845" elapsed="1.001312"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:19:43.989900" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div/div[2]/div[2]/div[1]/article[3]/a'.</msg>
-<arg>xpath:/html/body/main/article/div[2]/div/div[2]/div[2]/div[1]/article[3]/a</arg>
+<msg time="2025-10-24T11:16:43.715053" level="INFO">Clicking element 'xpath:/html/body/header/div/div/div/nav/div/ul/li[5]/ul/li[1]/a/span'.</msg>
+<arg>xpath:/html/body/header/div/div/div/nav/div/ul/li[5]/ul/li[1]/a/span</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T13:19:43.988608" elapsed="1.270877"/>
+<status status="PASS" start="2025-10-24T11:16:43.714290" elapsed="1.199217"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T13:19:49.261724" level="INFO">Slept 4 seconds.</msg>
-<arg>4</arg>
+<msg time="2025-10-24T11:16:45.914882" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T13:19:45.260561" elapsed="4.001834"/>
+<status status="PASS" start="2025-10-24T11:16:44.914265" elapsed="1.001064"/>
 </kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:19:49.576048" level="INFO">${otsikko} = Com­puter Ap­plic­a­tions</msg>
-<var>${otsikko}</var>
-<arg>xpath://main//h1</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T13:19:49.263667" elapsed="0.312819"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-24T11:16:46.917982" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-24T11:16:45.916868" elapsed="1.001695"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2025-10-24T11:16:46.920377" level="INFO">Clicking link 'xpath:/html/body/main/article/div[6]/div/article[1]/div/h3/a'.</msg>
+<arg>xpath:/html/body/main/article/div[6]/div/article[1]/div/h3/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-24T11:16:46.919921" elapsed="1.528039"/>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:19:49.612225" level="INFO">Current page contains text 'Com­puter Ap­plic­a­tions'.</msg>
-<arg>${otsikko}</arg>
+<msg time="2025-10-24T11:16:48.532368" level="INFO">Current page contains text 'Evon kampus'.</msg>
+<arg>Evon kampus</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-23T13:19:49.577533" elapsed="0.035163"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:19:50.369670" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-23T13:19:50.370155" level="FAIL">The element 'xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div' should be visible, but it is not.</msg>
-<arg>xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-10-23T13:19:49.614491" elapsed="0.763800">The element 'xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div' should be visible, but it is not.</status>
-</kw>
-<msg time="2025-10-23T13:19:50.379076" level="INFO">${onko_nakyvissa} = False</msg>
-=======
-<status status="PASS" start="2025-10-23T12:58:11.493475" elapsed="3.705816"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-10-23T12:58:15.201219" elapsed="0.088517"/>
+<status status="PASS" start="2025-10-24T11:16:48.448923" elapsed="0.083728"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T12:58:18.292879" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T12:58:15.291066" elapsed="3.002714"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T12:58:18.298203" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div[4]/div[1]/div/div[2]/button[4]'.</msg>
-<arg>xpath:/html/body/div[1]/div/div[4]/div[1]/div/div[2]/button[4]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T12:58:18.295908" elapsed="0.286795"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T12:58:19.587233" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-24T11:16:49.534356" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T12:58:18.585398" elapsed="1.002852"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T12:58:19.592204" level="INFO">Clicking element 'xpath:/html/body/main/article/div[1]/div/div/div/div[2]/div/div/a'.</msg>
-<arg>xpath:/html/body/main/article/div[1]/div/div/div/div[2]/div/div/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T12:58:19.590779" elapsed="1.825351"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T12:58:24.420519" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T12:58:21.418704" elapsed="3.003636"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T12:58:24.426603" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/button'.</msg>
-<arg>xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T12:58:24.425181" elapsed="0.292080"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T12:58:25.721184" level="INFO">Slept 1 second.</msg>
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T12:58:24.719055" elapsed="1.003478"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T12:58:25.726453" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/div/div[2]/label'.</msg>
-<arg>xpath:/html/body/main/article/div[2]/div/div[1]/fieldset[8]/div/div[2]/label</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T12:58:25.724792" elapsed="0.249246"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T12:58:26.977808" level="INFO">Slept 1 second.</msg>
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T12:58:25.975552" elapsed="1.003019"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T12:58:26.981796" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div/div[2]/div[2]/div[1]/article[3]/a'.</msg>
-<arg>xpath:/html/body/main/article/div[2]/div/div[2]/div[2]/div[1]/article[3]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T12:58:26.980624" elapsed="1.419032"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T12:58:32.401735" level="INFO">Slept 4 seconds.</msg>
-<arg>4</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T12:58:28.400811" elapsed="4.001577"/>
-</kw>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2025-10-23T12:58:32.457273" level="INFO">${otsikko} = Com­puter Ap­plic­a­tions</msg>
-<var>${otsikko}</var>
-<arg>xpath://main//h1</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T12:58:32.403735" elapsed="0.053994"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2025-10-23T12:58:32.485857" level="INFO">Current page contains text 'Com­puter Ap­plic­a­tions'.</msg>
-<arg>${otsikko}</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2025-10-23T12:58:32.458951" elapsed="0.027351"/>
-</kw>
-<kw name="Run Keyword And Return Status" owner="BuiltIn">
-<kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2025-10-23T12:58:32.965632" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-23T12:58:32.966530" level="FAIL">The element 'xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div' should be visible, but it is not.</msg>
-<arg>xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-10-23T12:58:32.488333" elapsed="0.487564">The element 'xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div' should be visible, but it is not.</status>
-</kw>
-<msg time="2025-10-23T12:58:32.977348" level="INFO">${onko_nakyvissa} = False</msg>
->>>>>>> 755f6775985841ee89b962cfb5dc24136a7b2e07
-<var>${onko_nakyvissa}</var>
-<arg>Element Should Be Visible</arg>
-<arg>xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div</arg>
-<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2025-10-23T13:19:49.613769" elapsed="0.765596"/>
-=======
-<status status="PASS" start="2025-10-23T12:58:32.487465" elapsed="0.490272"/>
->>>>>>> 755f6775985841ee89b962cfb5dc24136a7b2e07
-</kw>
-<kw name="Run Keyword If" owner="BuiltIn">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>"Elementti ei ole näkyvissä ennen skrollausta"</arg>
-<doc>Logs the given message to the console.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2025-10-23T13:19:50.382017" elapsed="0.001777"/>
-=======
-<status status="PASS" start="2025-10-23T12:58:32.982288" elapsed="0.002089"/>
->>>>>>> 755f6775985841ee89b962cfb5dc24136a7b2e07
-</kw>
-<arg>not ${onko_nakyvissa}</arg>
-<arg>Log To Console</arg>
-<arg>"Elementti ei ole näkyvissä ennen skrollausta"</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<<<<<<< HEAD
-<status status="PASS" start="2025-10-23T13:19:50.380738" elapsed="0.003474"/>
+<status status="PASS" start="2025-10-24T11:16:48.533327" elapsed="1.001588"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div/div/a</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-10-23T13:19:50.386116" elapsed="0.573187"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T13:19:52.961849" level="INFO">Slept 2 seconds.</msg>
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T13:19:50.960693" elapsed="2.001702"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:19:52.964618" level="INFO">Clicking element 'xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div/div/a'.</msg>
-<msg time="2025-10-23T13:19:54.320875" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-23T13:19:54.322952" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="wp-block-button__link wp-element-button" href="https://www.hamk.fi/en/student-pages/study-modes-and-methods/"&gt;...&lt;/a&gt; is not clickable at point (714, 653). Other element would receive the click: &lt;button class="expandable-card__button js-expandable-card-button" type="button" aria-expanded="false"&gt;...&lt;/button&gt;
-  (Session info: chrome=141.0.7390.78); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+<msg time="2025-10-24T11:16:49.837581" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
-	GetHandleVerifier [0x0x7ff765fce8e5+80021]
-	GetHandleVerifier [0x0x7ff765fce940+80112]
-	(No symbol) [0x0x7ff765d5060f]
-	(No symbol) [0x0x7ff765db0a39]
-	(No symbol) [0x0x7ff765dae3be]
-	(No symbol) [0x0x7ff765dab2e1]
-	(No symbol) [0x0x7ff765daa1a0]
-	(No symbol) [0x0x7ff765d9b7c8]
-	(No symbol) [0x0x7ff765dd122a]
-	(No symbol) [0x0x7ff765d9b056]
-	(No symbol) [0x0x7ff765dd1440]
-	(No symbol) [0x0x7ff765df968a]
-	(No symbol) [0x0x7ff765dd1003]
-	(No symbol) [0x0x7ff765d995d1]
-	(No symbol) [0x0x7ff765d9a3f3]
-	GetHandleVerifier [0x0x7ff76628dc7d+2960429]
-	GetHandleVerifier [0x0x7ff766287f3a+2936554]
-	GetHandleVerifier [0x0x7ff7662a8977+3070247]
-	GetHandleVerifier [0x0x7ff765fe83ce+185214]
-	GetHandleVerifier [0x0x7ff765fefe1f+216527]
-	GetHandleVerifier [0x0x7ff765fd7b24+117460]
-	GetHandleVerifier [0x0x7ff765fd7cdf+117903]
-	GetHandleVerifier [0x0x7ff765fbdbb8+11112]
+	GetHandleVerifier [0x0x7ff73480e8e5+80021]
+	GetHandleVerifier [0x0x7ff73480e940+80112]
+	(No symbol) [0x0x7ff734590425]
+	(No symbol) [0x0x7ff7345d864f]
+	(No symbol) [0x0x7ff7346110f2]
+	(No symbol) [0x0x7ff73460b89f]
+	(No symbol) [0x0x7ff73460a94a]
+	(No symbol) [0x0x7ff73455a765]
+	GetHandleVerifier [0x0x7ff734acdc7d+2960429]
+	GetHandleVerifier [0x0x7ff734ac7f3a+2936554]
+	GetHandleVerifier [0x0x7ff734ae8977+3070247]
+	GetHandleVerifier [0x0x7ff7348283ce+185214]
+	GetHandleVerifier [0x0x7ff73482fe1f+216527]
+	(No symbol) [0x0x7ff73455970e]
+	GetHandleVerifier [0x0x7ff734c06a68+4241944]
 	BaseThreadInitThunk [0x0x7ff8b0c2e8d7+23]
 	RtlUserThreadStart [0x0x7ff8b19ec53c+44]
 </msg>
-<arg>xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div/div/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-10-23T13:19:52.963819" elapsed="1.489740">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="wp-block-button__link wp-element-button" href="https://www.hamk.fi/en/student-pages/study-modes-and-methods/"&gt;...&lt;/a&gt; is not clickable at point (714, 653). Other element would receive the click: &lt;button class="expandable-card__button js-expandable-card-button" type="button" aria-expanded="false"&gt;...&lt;/button&gt;
-  (Session info: chrome=141.0.7390.78); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+<msg time="2025-10-24T11:16:49.839967" level="FAIL">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.78); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
-	GetHandleVerifier [0x0x7ff765fce8e5+80021]
-	GetHandleVerifier [0x0x7ff765fce940+80112]
-	(No symbol) [0x0x7ff765d5060f]
-	(No symbol) [0x0x7ff765db0a39]
-	(No symbol) [0x0x7ff765dae3be]
-	(No symbol) [0x0x7ff765dab2e1]
-	(No symbol) [0x0x7ff765daa1a0]
-	(No symbol) [0x0x7ff765d9b7c8]
-	(No symbol) [0x0x7ff765dd122a]
-	(No symbol) [0x0x7ff765d9b056]
-	(No symbol) [0x0x7ff765dd1440]
-	(No symbol) [0x0x7ff765df968a]
-	(No symbol) [0x0x7ff765dd1003]
-	(No symbol) [0x0x7ff765d995d1]
-	(No symbol) [0x0x7ff765d9a3f3]
-	GetHandleVerifier [0x0x7ff76628dc7d+2960429]
-	GetHandleVerifier [0x0x7ff766287f3a+2936554]
-	GetHandleVerifier [0x0x7ff7662a8977+3070247]
-	GetHandleVerifier [0x0x7ff765fe83ce+185214]
-	GetHandleVerifier [0x0x7ff765fefe1f+216527]
-	GetHandleVerifier [0x0x7ff765fd7b24+117460]
-	GetHandleVerifier [0x0x7ff765fd7cdf+117903]
-	GetHandleVerifier [0x0x7ff765fbdbb8+11112]
+	GetHandleVerifier [0x0x7ff73480e8e5+80021]
+	GetHandleVerifier [0x0x7ff73480e940+80112]
+	(No symbol) [0x0x7ff73459060f]
+	(No symbol) [0x0x7ff73457c145]
+	(No symbol) [0x0x7ff7345a0952]
+	(No symbol) [0x0x7ff7346399f6]
+	(No symbol) [0x0x7ff734611003]
+	(No symbol) [0x0x7ff7345d95d1]
+	(No symbol) [0x0x7ff7345da3f3]
+	GetHandleVerifier [0x0x7ff734acdc7d+2960429]
+	GetHandleVerifier [0x0x7ff734ac7f3a+2936554]
+	GetHandleVerifier [0x0x7ff734ae8977+3070247]
+	GetHandleVerifier [0x0x7ff7348283ce+185214]
+	GetHandleVerifier [0x0x7ff73482fe1f+216527]
+	GetHandleVerifier [0x0x7ff734817b24+117460]
+	GetHandleVerifier [0x0x7ff734817cdf+117903]
+	GetHandleVerifier [0x0x7ff7347fdbb8+11112]
+	BaseThreadInitThunk [0x0x7ff8b0c2e8d7+23]
+	RtlUserThreadStart [0x0x7ff8b19ec53c+44]
+</msg>
+<arg>xpath:/html/body/main/article/div[5]/div</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="FAIL" start="2025-10-24T11:16:49.536459" elapsed="0.385796">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.78); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff73480e8e5+80021]
+	GetHandleVerifier [0x0x7ff73480e940+80112]
+	(No symbol) [0x0x7ff73459060f]
+	(No symbol) [0x0x7ff73457c145]
+	(No symbol) [0x0x7ff7345a0952]
+	(No symbol) [0x0x7ff7346399f6]
+	(No symbol) [0x0x7ff734611003]
+	(No symbol) [0x0x7ff7345d95d1]
+	(No symbol) [0x0x7ff7345da3f3]
+	GetHandleVerifier [0x0x7ff734acdc7d+2960429]
+	GetHandleVerifier [0x0x7ff734ac7f3a+2936554]
+	GetHandleVerifier [0x0x7ff734ae8977+3070247]
+	GetHandleVerifier [0x0x7ff7348283ce+185214]
+	GetHandleVerifier [0x0x7ff73482fe1f+216527]
+	GetHandleVerifier [0x0x7ff734817b24+117460]
+	GetHandleVerifier [0x0x7ff734817cdf+117903]
+	GetHandleVerifier [0x0x7ff7347fdbb8+11112]
 	BaseThreadInitThunk [0x0x7ff8b0c2e8d7+23]
 	RtlUserThreadStart [0x0x7ff8b19ec53c+44]
 </status>
 </kw>
-<status status="FAIL" start="2025-10-23T13:19:30.690055" elapsed="23.765932">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a class="wp-block-button__link wp-element-button" href="https://www.hamk.fi/en/student-pages/study-modes-and-methods/"&gt;...&lt;/a&gt; is not clickable at point (714, 653). Other element would receive the click: &lt;button class="expandable-card__button js-expandable-card-button" type="button" aria-expanded="false"&gt;...&lt;/button&gt;
-  (Session info: chrome=141.0.7390.78); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.923455" elapsed="0.000588"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Yhteystiedot ja saapuminen</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.924850" elapsed="0.000218"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.927040" elapsed="0.000335"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.928260" elapsed="0.000301"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.929758" elapsed="0.000345"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>xpath:/html/body/main/article/div[6]/div/article[2]/div/h3/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.931093" elapsed="0.000217"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Forssan kampus</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.931932" elapsed="0.000195"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.932611" elapsed="0.000172"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath:/html/body/main/article/div[5]/div</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.934269" elapsed="0.000225"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Yhteystiedot ja saapuminen</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.935163" elapsed="0.000214"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.936099" elapsed="0.000175"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.936813" elapsed="0.000185"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.937553" elapsed="0.000185"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>xpath:/html/body/main/article/div[6]/div/article[3]/div/h3/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.938484" elapsed="0.000211"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Hämeenlinnan korkeakoulukeskus</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.939413" elapsed="0.000426"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.941290" elapsed="0.000300"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath:/html/body/main/article/div[5]/div</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.943380" elapsed="0.000500"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Yhteystiedot ja saapuminen</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.945138" elapsed="0.000246"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.946014" elapsed="0.000171"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.946752" elapsed="0.000141"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.947454" elapsed="0.000162"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>xpath:/html/body/main/article/div[6]/div/article[4]/div/h3/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.948042" elapsed="0.000133"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Lepaan kampus</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.948584" elapsed="0.000128"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.949228" elapsed="0.000208"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath:/html/body/main/article/div[5]/div</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.950156" elapsed="0.000217"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Yhteystiedot ja saapuminen</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.950887" elapsed="0.000158"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.951638" elapsed="0.000178"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.952423" elapsed="0.000209"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.953335" elapsed="0.000157"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>xpath:/html/body/main/article/div[6]/div/article[5]/div/h3/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.954111" elapsed="0.000180"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Mustialan kampus</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.955002" elapsed="0.000202"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.955981" elapsed="0.000287"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath:/html/body/main/article/div[5]/div</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.957129" elapsed="0.000184"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Yhteystiedot ja saapuminen</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.957945" elapsed="0.000295"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.959644" elapsed="0.000326"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.961112" elapsed="0.000217"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.961886" elapsed="0.000188"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>xpath:/html/body/main/article/div[6]/div/article[6]/div/h3/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.963076" elapsed="0.000298"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Riihimäen kampus</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.963964" elapsed="0.000200"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.964761" elapsed="0.000266"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath:/html/body/main/article/div[4]/div</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.965863" elapsed="0.000184"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Yhteystiedot ja saapuminen</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.966687" elapsed="0.000264"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.967701" elapsed="0.000231"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.968498" elapsed="0.000169"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.969100" elapsed="0.000119"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>xpath:/html/body/main/article/div[6]/div/article[7]/div/h3/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.969672" elapsed="0.000112"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Valkeakosken kampus</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.970114" elapsed="0.000107"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.970577" elapsed="0.000108"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath:/html/body/main/article/div[5]/div</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.971722" elapsed="0.000431"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Yhteystiedot ja saapuminen</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.973230" elapsed="0.000395"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.974531" elapsed="0.000267"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-10-24T11:16:49.976482" elapsed="0.000596"/>
+</kw>
+<status status="FAIL" start="2025-10-24T11:16:37.627980" elapsed="12.350240">InvalidSessionIdException: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=141.0.7390.78); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
-	GetHandleVerifier [0x0x7ff765fce8e5+80021]
-	GetHandleVerifier [0x0x7ff765fce940+80112]
-	(No symbol) [0x0x7ff765d5060f]
-	(No symbol) [0x0x7ff765db0a39]
-	(No symbol) [0x0x7ff765dae3be]
-	(No symbol) [0x0x7ff765dab2e1]
-	(No symbol) [0x0x7ff765daa1a0]
-	(No symbol) [0x0x7ff765d9b7c8]
-	(No symbol) [0x0x7ff765dd122a]
-	(No symbol) [0x0x7ff765d9b056]
-	(No symbol) [0x0x7ff765dd1440]
-	(No symbol) [0x0x7ff765df968a]
-	(No symbol) [0x0x7ff765dd1003]
-	(No symbol) [0x0x7ff765d995d1]
-	(No symbol) [0x0x7ff765d9a3f3]
-	GetHandleVerifier [0x0x7ff76628dc7d+2960429]
-	GetHandleVerifier [0x0x7ff766287f3a+2936554]
-	GetHandleVerifier [0x0x7ff7662a8977+3070247]
-	GetHandleVerifier [0x0x7ff765fe83ce+185214]
-	GetHandleVerifier [0x0x7ff765fefe1f+216527]
-	GetHandleVerifier [0x0x7ff765fd7b24+117460]
-	GetHandleVerifier [0x0x7ff765fd7cdf+117903]
-	GetHandleVerifier [0x0x7ff765fbdbb8+11112]
+	GetHandleVerifier [0x0x7ff73480e8e5+80021]
+	GetHandleVerifier [0x0x7ff73480e940+80112]
+	(No symbol) [0x0x7ff73459060f]
+	(No symbol) [0x0x7ff73457c145]
+	(No symbol) [0x0x7ff7345a0952]
+	(No symbol) [0x0x7ff7346399f6]
+	(No symbol) [0x0x7ff734611003]
+	(No symbol) [0x0x7ff7345d95d1]
+	(No symbol) [0x0x7ff7345da3f3]
+	GetHandleVerifier [0x0x7ff734acdc7d+2960429]
+	GetHandleVerifier [0x0x7ff734ac7f3a+2936554]
+	GetHandleVerifier [0x0x7ff734ae8977+3070247]
+	GetHandleVerifier [0x0x7ff7348283ce+185214]
+	GetHandleVerifier [0x0x7ff73482fe1f+216527]
+	GetHandleVerifier [0x0x7ff734817b24+117460]
+	GetHandleVerifier [0x0x7ff734817cdf+117903]
+	GetHandleVerifier [0x0x7ff7347fdbb8+11112]
 	BaseThreadInitThunk [0x0x7ff8b0c2e8d7+23]
 	RtlUserThreadStart [0x0x7ff8b19ec53c+44]
 </status>
 </test>
-<status status="FAIL" start="2025-10-23T13:19:29.938470" elapsed="24.522032"/>
-=======
-<status status="PASS" start="2025-10-23T12:58:32.980712" elapsed="0.004407"/>
-</kw>
-<kw name="Scroll Element Into View" owner="SeleniumLibrary">
-<arg>xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/div</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-10-23T12:58:32.989945" elapsed="0.362566"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T12:58:35.356867" level="INFO">Slept 2 seconds.</msg>
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T12:58:33.355477" elapsed="2.001916"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T12:58:35.362706" level="INFO">Clicking element 'xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/'.</msg>
-<msg time="2025-10-23T12:58:35.783434" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-10-23T12:58:35.784485" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression /html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/ because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/' is not a valid XPath expression.
-  (Session info: chrome=141.0.7390.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff6d47ee8e5+80021]
-	GetHandleVerifier [0x0x7ff6d47ee940+80112]
-	(No symbol) [0x0x7ff6d457060f]
-	(No symbol) [0x0x7ff6d457816a]
-	(No symbol) [0x0x7ff6d457b26f]
-	(No symbol) [0x0x7ff6d457b32f]
-	(No symbol) [0x0x7ff6d45c8107]
-	(No symbol) [0x0x7ff6d45c8b1c]
-	(No symbol) [0x0x7ff6d461c957]
-	(No symbol) [0x0x7ff6d45f126f]
-	(No symbol) [0x0x7ff6d461968a]
-	(No symbol) [0x0x7ff6d45f1003]
-	(No symbol) [0x0x7ff6d45b95d1]
-	(No symbol) [0x0x7ff6d45ba3f3]
-	GetHandleVerifier [0x0x7ff6d4aadc7d+2960429]
-	GetHandleVerifier [0x0x7ff6d4aa7f3a+2936554]
-	GetHandleVerifier [0x0x7ff6d4ac8977+3070247]
-	GetHandleVerifier [0x0x7ff6d48083ce+185214]
-	GetHandleVerifier [0x0x7ff6d480fe1f+216527]
-	GetHandleVerifier [0x0x7ff6d47f7b24+117460]
-	GetHandleVerifier [0x0x7ff6d47f7cdf+117903]
-	GetHandleVerifier [0x0x7ff6d47ddbb8+11112]
-	BaseThreadInitThunk [0x0x7ffa8824e8d7+23]
-	RtlUserThreadStart [0x0x7ffa89a0c53c+44]
-</msg>
-<arg>xpath:/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2025-10-23T12:58:35.359349" elapsed="0.610487">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression /html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/ because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/' is not a valid XPath expression.
-  (Session info: chrome=141.0.7390.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff6d47ee8e5+80021]
-	GetHandleVerifier [0x0x7ff6d47ee940+80112]
-	(No symbol) [0x0x7ff6d457060f]
-	(No symbol) [0x0x7ff6d457816a]
-	(No symbol) [0x0x7ff6d457b26f]
-	(No symbol) [0x0x7ff6d457b32f]
-	(No symbol) [0x0x7ff6d45c8107]
-	(No symbol) [0x0x7ff6d45c8b1c]
-	(No symbol) [0x0x7ff6d461c957]
-	(No symbol) [0x0x7ff6d45f126f]
-	(No symbol) [0x0x7ff6d461968a]
-	(No symbol) [0x0x7ff6d45f1003]
-	(No symbol) [0x0x7ff6d45b95d1]
-	(No symbol) [0x0x7ff6d45ba3f3]
-	GetHandleVerifier [0x0x7ff6d4aadc7d+2960429]
-	GetHandleVerifier [0x0x7ff6d4aa7f3a+2936554]
-	GetHandleVerifier [0x0x7ff6d4ac8977+3070247]
-	GetHandleVerifier [0x0x7ff6d48083ce+185214]
-	GetHandleVerifier [0x0x7ff6d480fe1f+216527]
-	GetHandleVerifier [0x0x7ff6d47f7b24+117460]
-	GetHandleVerifier [0x0x7ff6d47f7cdf+117903]
-	GetHandleVerifier [0x0x7ff6d47ddbb8+11112]
-	BaseThreadInitThunk [0x0x7ffa8824e8d7+23]
-	RtlUserThreadStart [0x0x7ffa89a0c53c+44]
-</status>
-</kw>
-<status status="FAIL" start="2025-10-23T12:58:11.491960" elapsed="24.479303">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression /html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/ because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '/html/body/main/article/div[5]/div[4]/div[2]/div/div[2]/div/div/div/' is not a valid XPath expression.
-  (Session info: chrome=141.0.7390.108); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
-Stacktrace:
-	GetHandleVerifier [0x0x7ff6d47ee8e5+80021]
-	GetHandleVerifier [0x0x7ff6d47ee940+80112]
-	(No symbol) [0x0x7ff6d457060f]
-	(No symbol) [0x0x7ff6d457816a]
-	(No symbol) [0x0x7ff6d457b26f]
-	(No symbol) [0x0x7ff6d457b32f]
-	(No symbol) [0x0x7ff6d45c8107]
-	(No symbol) [0x0x7ff6d45c8b1c]
-	(No symbol) [0x0x7ff6d461c957]
-	(No symbol) [0x0x7ff6d45f126f]
-	(No symbol) [0x0x7ff6d461968a]
-	(No symbol) [0x0x7ff6d45f1003]
-	(No symbol) [0x0x7ff6d45b95d1]
-	(No symbol) [0x0x7ff6d45ba3f3]
-	GetHandleVerifier [0x0x7ff6d4aadc7d+2960429]
-	GetHandleVerifier [0x0x7ff6d4aa7f3a+2936554]
-	GetHandleVerifier [0x0x7ff6d4ac8977+3070247]
-	GetHandleVerifier [0x0x7ff6d48083ce+185214]
-	GetHandleVerifier [0x0x7ff6d480fe1f+216527]
-	GetHandleVerifier [0x0x7ff6d47f7b24+117460]
-	GetHandleVerifier [0x0x7ff6d47f7cdf+117903]
-	GetHandleVerifier [0x0x7ff6d47ddbb8+11112]
-	BaseThreadInitThunk [0x0x7ffa8824e8d7+23]
-	RtlUserThreadStart [0x0x7ffa89a0c53c+44]
-</status>
-</test>
-<status status="FAIL" start="2025-10-23T12:58:10.986537" elapsed="24.988965"/>
->>>>>>> 755f6775985841ee89b962cfb5dc24136a7b2e07
+<status status="FAIL" start="2025-10-24T11:16:37.183833" elapsed="12.796448"/>
 </suite>
 <statistics>
 <total>
@@ -462,5 +443,25 @@ Stacktrace:
 </suite>
 </statistics>
 <errors>
+<msg time="2025-10-24T11:16:49.837581" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	GetHandleVerifier [0x0x7ff73480e8e5+80021]
+	GetHandleVerifier [0x0x7ff73480e940+80112]
+	(No symbol) [0x0x7ff734590425]
+	(No symbol) [0x0x7ff7345d864f]
+	(No symbol) [0x0x7ff7346110f2]
+	(No symbol) [0x0x7ff73460b89f]
+	(No symbol) [0x0x7ff73460a94a]
+	(No symbol) [0x0x7ff73455a765]
+	GetHandleVerifier [0x0x7ff734acdc7d+2960429]
+	GetHandleVerifier [0x0x7ff734ac7f3a+2936554]
+	GetHandleVerifier [0x0x7ff734ae8977+3070247]
+	GetHandleVerifier [0x0x7ff7348283ce+185214]
+	GetHandleVerifier [0x0x7ff73482fe1f+216527]
+	(No symbol) [0x0x7ff73455970e]
+	GetHandleVerifier [0x0x7ff734c06a68+4241944]
+	BaseThreadInitThunk [0x0x7ff8b0c2e8d7+23]
+	RtlUserThreadStart [0x0x7ff8b19ec53c+44]
+</msg>
 </errors>
 </robot>
