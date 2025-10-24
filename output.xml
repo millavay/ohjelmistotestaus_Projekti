@@ -1,101 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.0 on win32)" generated="2025-10-23T13:47:21.878586" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.0 on win32)" generated="2025-10-24T14:49:47.989779" rpa="false" schemaversion="5">
 <suite id="s1" name="Projekti" source="c:\ohjelmistotestaus_Projekti\projekti.robot">
-<test id="s1-t1" name="Hamk testaus kohta 4" line="100">
+<test id="s1-t1" name="Etsii henkilön yhteystiedot Testi 4" line="101">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:47:22.699970" level="INFO">Opening browser 'Chrome' to base url 'http://www.hamk.fi'.</msg>
+<msg time="2025-10-24T14:49:48.411427" level="INFO">Opening browser 'Chrome' to base url 'http://www.hamk.fi'.</msg>
 <arg>http://www.hamk.fi</arg>
 <arg>Chrome</arg>
 <arg>options=add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-10-23T13:47:22.699054" elapsed="4.282363"/>
+<status status="PASS" start="2025-10-24T14:49:48.410983" elapsed="4.229964"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-10-23T13:47:26.982236" elapsed="0.197446"/>
+<status status="PASS" start="2025-10-24T14:49:52.641854" elapsed="0.116216"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T13:47:30.185562" level="INFO">Slept 3 seconds.</msg>
-<arg>3</arg>
+<msg time="2025-10-24T14:49:54.760638" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T13:47:27.184322" elapsed="3.003279"/>
+<status status="PASS" start="2025-10-24T14:49:52.759198" elapsed="2.001759"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:47:30.192273" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div[4]/div[1]/div/div[2]/button[4]'.</msg>
+<msg time="2025-10-24T14:49:54.762319" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div[4]/div[1]/div/div[2]/button[4]'.</msg>
 <arg>xpath:/html/body/div[1]/div/div[4]/div[1]/div/div[2]/button[4]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T13:47:30.190670" elapsed="0.106965"/>
+<status status="PASS" start="2025-10-24T14:49:54.761742" elapsed="0.082126"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T13:47:31.299737" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-24T14:49:55.844952" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T13:47:30.298926" elapsed="1.001655"/>
+<status status="PASS" start="2025-10-24T14:49:54.844417" elapsed="1.000784"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:47:31.302682" level="INFO">Clicking element 'xpath:/html/body/header/div/div/div/nav/div/ul/li[5]/button'.</msg>
+<msg time="2025-10-24T14:49:55.846316" level="INFO">Clicking element 'xpath:/html/body/header/div/div/div/nav/div/ul/li[5]/button'.</msg>
 <arg>xpath:/html/body/header/div/div/div/nav/div/ul/li[5]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T13:47:31.301922" elapsed="0.081864"/>
+<status status="PASS" start="2025-10-24T14:49:55.845970" elapsed="0.055048"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:47:31.385933" level="INFO">Clicking element 'xpath:/html/body/header/div/div/div/nav/div/ul/li[5]/ul/li[5]/a'.</msg>
+<msg time="2025-10-24T14:49:55.902158" level="INFO">Clicking element 'xpath:/html/body/header/div/div/div/nav/div/ul/li[5]/ul/li[5]/a'.</msg>
 <arg>xpath:/html/body/header/div/div/div/nav/div/ul/li[5]/ul/li[5]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T13:47:31.384961" elapsed="1.094317"/>
+<status status="PASS" start="2025-10-24T14:49:55.901652" elapsed="0.746973"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T13:47:33.481305" level="INFO">Slept 1 second.</msg>
+<msg time="2025-10-24T14:49:57.650001" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T13:47:32.480275" elapsed="1.001573"/>
+<status status="PASS" start="2025-10-24T14:49:56.649252" elapsed="1.001006"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:47:33.483805" level="INFO">Clicking element 'xpath:/html/body/main/article/div[1]/div/div/div[2]/a'.</msg>
+<msg time="2025-10-24T14:49:57.651456" level="INFO">Clicking element 'xpath:/html/body/main/article/div[1]/div/div/div[2]/a'.</msg>
 <arg>xpath:/html/body/main/article/div[1]/div/div/div[2]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T13:47:33.482878" elapsed="1.030871"/>
+<status status="PASS" start="2025-10-24T14:49:57.651104" elapsed="0.724916"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T13:47:37.516625" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-10-24T14:50:01.378054" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T13:47:34.515709" elapsed="3.001309"/>
+<status status="PASS" start="2025-10-24T14:49:58.376864" elapsed="3.001724"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-10-24T14:50:01.380735" level="INFO">${hakuNimi} = Esa Huiskonen</msg>
+<var>${hakuNimi}</var>
+<arg>Esa Huiskonen</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-10-24T14:50:01.380040" elapsed="0.000987"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:47:37.518564" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div/div[1]/div[1]/div[1]/div[2]/input'.</msg>
+<msg time="2025-10-24T14:50:01.382872" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div/div[1]/div[1]/div[1]/div[2]/input'.</msg>
 <arg>xpath:/html/body/main/article/div[2]/div/div[1]/div[1]/div[1]/div[2]/input</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T13:47:37.517855" elapsed="0.144065"/>
+<status status="PASS" start="2025-10-24T14:50:01.382242" elapsed="0.093118"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:47:37.663385" level="INFO">Typing text 'Esa Huiskonen' into text field 'xpath:/html/body/main/article/div[2]/div/div[1]/div[1]/div[1]/div[2]/input'.</msg>
+<msg time="2025-10-24T14:50:01.476549" level="INFO">Typing text 'Esa Huiskonen' into text field 'xpath:/html/body/main/article/div[2]/div/div[1]/div[1]/div[1]/div[2]/input'.</msg>
 <arg>xpath:/html/body/main/article/div[2]/div/div[1]/div[1]/div[1]/div[2]/input</arg>
-<arg>Esa Huiskonen</arg>
+<arg>${hakuNimi}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T13:47:37.662603" elapsed="0.232297"/>
+<status status="PASS" start="2025-10-24T14:50:01.476117" elapsed="0.140130"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T13:47:40.897879" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-10-24T14:50:04.617538" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T13:47:37.896531" elapsed="3.002123"/>
+<status status="PASS" start="2025-10-24T14:50:01.616786" elapsed="3.001176"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-10-23T13:47:40.900738" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div/div[3]/div/div[1]/article[1]/div[2]/div[3]/a'.</msg>
+<msg time="2025-10-24T14:50:04.619421" level="INFO">Clicking element 'xpath:/html/body/main/article/div[2]/div/div[3]/div/div[1]/article[1]/div[2]/div[3]/a'.</msg>
 <arg>xpath:/html/body/main/article/div[2]/div/div[3]/div/div[1]/article[1]/div[2]/div[3]/a</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-10-23T13:47:40.900020" elapsed="0.814967"/>
+<status status="PASS" start="2025-10-24T14:50:04.618961" elapsed="0.625283"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-10-23T13:47:44.718198" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-10-24T14:50:08.245658" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-10-23T13:47:41.716245" elapsed="3.003045"/>
+<status status="PASS" start="2025-10-24T14:50:05.244757" elapsed="3.001148"/>
 </kw>
-<status status="PASS" start="2025-10-23T13:47:22.697973" elapsed="22.022392"/>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-10-24T14:50:08.247057" level="INFO">${hakuNimi} = Esa Huiskonen</msg>
+<var>${hakuNimi}</var>
+<arg>Esa Huiskonen</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-10-24T14:50:08.246709" elapsed="0.000454"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-10-24T14:50:08.272171" level="INFO">${nimi} = Esa Huis­ko­nen</msg>
+<var>${nimi}</var>
+<arg>xpath=//main//h1</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-24T14:50:08.247796" elapsed="0.024544"/>
+</kw>
+<kw name="Replace String Using Regexp" owner="String">
+<msg time="2025-10-24T14:50:08.273560" level="INFO">${nimi} = Esa Huiskonen</msg>
+<var>${nimi}</var>
+<arg>${nimi}</arg>
+<arg>[\u00AD]</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``pattern`` in the given ``string`` with ``replace_with``.</doc>
+<status status="PASS" start="2025-10-24T14:50:08.272833" elapsed="0.000838"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${nimi}</arg>
+<arg>${hakuNimi}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-10-24T14:50:08.274304" elapsed="0.000386"/>
+</kw>
+<status status="PASS" start="2025-10-24T14:49:48.409690" elapsed="19.865482"/>
 </test>
-<status status="PASS" start="2025-10-23T13:47:21.888737" elapsed="22.833444"/>
+<status status="PASS" start="2025-10-24T14:49:47.996945" elapsed="20.279224"/>
 </suite>
 <statistics>
 <total>

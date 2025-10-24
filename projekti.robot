@@ -1,5 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    String
 
 *** Test Cases ***
 # Mea Närhi
@@ -102,7 +103,7 @@ Etsii henkilön yhteystiedot Testi 4
     Open browser    http://www.hamk.fi    Chrome
     ...    options=add_experimental_option("detach", True)
     Maximize Browser Window
-    Sleep    3
+    Sleep    2
     #evästeet
     Click Element    xpath:/html/body/div[1]/div/div[4]/div[1]/div/div[2]/button[4]
     Sleep    1
@@ -115,18 +116,19 @@ Etsii henkilön yhteystiedot Testi 4
     Click Element    xpath:/html/body/main/article/div[1]/div/div/div[2]/a
     Sleep    3
     #Hae hakusanalla
+    ${hakuNimi}=    Set Variable    Esa Huiskonen
     Click Element    xpath:/html/body/main/article/div[2]/div/div[1]/div[1]/div[1]/div[2]/input
-    Input Text    xpath:/html/body/main/article/div[2]/div/div[1]/div[1]/div[1]/div[2]/input    Esa Huiskonen
+    Input Text    xpath:/html/body/main/article/div[2]/div/div[1]/div[1]/div[1]/div[2]/input    ${hakuNimi}
     Sleep    3
     #Avaa henkilön tiedot
     Click Element    xpath:/html/body/main/article/div[2]/div/div[3]/div/div[1]/article[1]/div[2]/div[3]/a
     Sleep    3
 
-*** Test Cases ***
-# Milla Väyrynen
-Tarkistaa nimen testi 5
-    ${nimi}=        Get Text    xpath:/html/body/main/article/div[1]/div/h1
-    Page Should Contain    ${nimi}
+    # Milla Väyrynen
+    #Tarkistaa nimen testi 5
+    ${nimi}=        Get Text    xpath://main//h1
+    ${nimi}=        Replace String Using Regexp    ${nimi}    [\u00AD]    ${EMPTY}
+    Should Be Equal As Strings    ${nimi}    ${hakuNimi}
 
 
 
