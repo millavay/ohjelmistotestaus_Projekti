@@ -131,6 +131,8 @@ Etsii henkilön yhteystiedot Testi 4
     ${nimi}=        Replace String Using Regexp    ${nimi}    [\u00AD]    ${EMPTY}
     Should Be Equal As Strings    ${nimi}    ${hakuNimi}
 
+    Close Browser
+
 
 
 *** Test Cases ***
@@ -162,6 +164,8 @@ Testaa että moodle linkki toimii testi 6
     Log    ${location}
 
     Location Should Be    https://learn.hamk.fi/
+
+    Close Browser
 
 *** Test Cases ***
 # Milla Väyrynen
@@ -205,6 +209,8 @@ Testaa computer applications ja opintopolku linkin Testi 7
     Switch Window    NEW
     Location Should Contain    /en/
     Run Keyword And Ignore Error    Location Should Contain    opintopolku.fi
+
+    Close Browser
 
     
 
@@ -339,6 +345,8 @@ Uutisten hakutulokset toimii kohta 9
     Scroll Element Into View    xpath:/html/body/main/article/div[3]/div/div[2]/div[1]
     Sleep    3
     Page Should Contain    tradenomi
+
+    Close Browser
 
 
 *** Test Cases ***
